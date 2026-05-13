@@ -1,0 +1,92 @@
+
+
+:root {
+  --clr1: rgb(255, 107, 107);
+  --clr2: rgb(78, 205, 196);
+  --clr1bg: rgb(255, 240, 240);
+  --clr2bg: rgb(240, 253, 252);
+  --gray1: rgb(240, 240, 240);
+  --gray2: rgb(155, 155, 155);
+  --gray3: rgb(44, 44, 44);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--clr1bg);
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1em;
+  }
+li{
+    border: 1px solid red;
+}
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Header */
+header {
+  background-color: var(--clr1);
+  padding: 1em 2em;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  gap: 1em;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Toy List */
+.toy-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.toy-list li {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 1em;
+  border: 2px solid var(--clr1);
+  background-color: white;
+  border-radius: 8px;
+}
+
+.toy-list li img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: 600ms;
+}
+
+.toy-list li img:hover {
+  rotate: -10deg;
+}
+
+button {
+  background-color: var(--clr1);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--clr2);
+}

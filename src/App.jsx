@@ -9,7 +9,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h1>uuuu</h1>
+      <div>
+      <h1>uuuu</h1>
+    </div>
+    // <h1>uuuu</h1>
     // <>
     //   <section id="center">
     //     <div className="hero">
