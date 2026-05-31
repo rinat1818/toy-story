@@ -1,6 +1,6 @@
 
 
-:root {
+/* :root {
   --clr1: rgb(255, 107, 107);
   --clr2: rgb(78, 205, 196);
   --clr1bg: rgb(255, 240, 240);
@@ -33,7 +33,7 @@ ul, ol {
 }
 
 /* Header */
-header {
+/* header {
   background-color: var(--clr1);
   padding: 1em 2em;
   color: white;
@@ -47,10 +47,10 @@ header nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
+} */
 
 /* Toy List */
-.toy-list ul {
+/* .toy-list ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1em;
@@ -89,4 +89,9 @@ button {
 
 button:hover {
   background-color: var(--clr2);
-}
+} * */
+
+@import "styles/vars.css";
+@import "styles/reset.css";
+@import "styles/AppHeader.css";
+@import "styles/ToyList.css";

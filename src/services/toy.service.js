@@ -11,7 +11,8 @@ export const toyService = {
     getById,
     save,
     remove,
-    getLabels
+    getLabels,
+    getEmptyToy
 }
 
 function query() {
@@ -36,6 +37,15 @@ function save(toy) {
 
 function getLabels() {
     return [...labels]
+}
+
+function getEmptyToy() {
+    return {
+        name: '',
+        price: 0,
+        labels: [],
+        inStock: true,
+    }
 }
 
 function _createToys() {

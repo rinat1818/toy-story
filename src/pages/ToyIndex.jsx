@@ -43,8 +43,8 @@ export function ToyIndex() {
     if (!toys.length) return <p>Loading...</p>
 
     return (
-        <div>
-            <h2>Toy List</h2>
+        <div className="toy-index">
+            {/* <h2>Toy List</h2> */}
             <ToyList toys={toys} />
         </div>
     )

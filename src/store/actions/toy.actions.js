@@ -14,10 +14,18 @@ export function removeToy(toyId) {
             store.dispatch({ type: 'REMOVE_TOY', toyId })
         })
 }
+// export function saveToy(toy) {
+//     toyService.save(toy)
+//         .then(savedToy => {
+//             const type = toy._id ? 'UPDATE_TOY' : 'ADD_TOY'
+//             store.dispatch({ type, toy: savedToy })
+//         })
+// }
 export function saveToy(toy) {
-    toyService.save(toy)
+    return toyService.save(toy)
         .then(savedToy => {
             const type = toy._id ? 'UPDATE_TOY' : 'ADD_TOY'
             store.dispatch({ type, toy: savedToy })
+            return savedToy
         })
 }

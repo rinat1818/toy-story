@@ -1,0 +1,36 @@
+.toy-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.toy-list li {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  padding: 1em;
+  border: 2px solid var(--clr1);
+  background-color: white;
+  border-radius: 8px;
+}
+
+.toy-list li img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: 600ms;
+}
+
+.toy-list li img:hover {
+  rotate: -10deg;
+}
+
+/* ///////////////////// */
+.fluid-grid {
+    --min-column-width: 180px;
+
+    display: grid;
+    grid-template-columns: 
+        repeat(auto-fit, minmax(var(--min-column-width), 1fr));
+}

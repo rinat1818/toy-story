@@ -1,0 +1,16 @@
+header {
+  background-color: var(--clr1);
+  padding: 1em 2em;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  gap: 1em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
