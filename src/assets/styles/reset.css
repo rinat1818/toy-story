@@ -30,3 +30,62 @@ button {
 button:hover {
   background-color: var(--clr2);
 }
+
+
+.msgs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    margin: 16px 0;
+}
+
+.msg-card {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    margin: 16px 0;
+}
+
+.review-card {
+    background: #fff0f0;
+    border: 2px solid #ffb3b3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(255,0,0,0.1);
+    background-color: #efc5c9;
+}
+
+.review-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.review-card small {
+    display: block;
+    color: #e63946;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* { 
+    
+    "userId": "6a201772387044eb1e5d3b77", 
+    "toyId": "6a1f020bad29ba6b69458ff3", 
+    "txt": "Best toy ever!" 
+}  */
