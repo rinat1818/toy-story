@@ -1,7 +1,9 @@
 header {
-  background-color: var(--clr1);
+  /* background-color: var(--clr1); */
+  background-color: aqua;
   padding: 1em 2em;
   color: white;
+  background-color: blue;
 }
 
 header nav {
